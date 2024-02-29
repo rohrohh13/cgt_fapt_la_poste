@@ -1,11 +1,11 @@
 {
     "name": {
-        "en": "CGT FAPT Ressources",
-        "fr": "CGT FAPT Ressources"
+        "en": "CGT FAPT La Poste",
+        "fr": "CGT FAPT La Poste"
     },
     "description": {
-        "en": "This is the theme for the CGT FAPT ressource website",
-        "fr": "Ceci est le thème pour le site des ressources de la CGT FAPT"
+        "en": "This is the theme for the CGT FAPT La Poste",
+        "fr": "Ceci est le thème pour le site des ressources de la CGT FAPT La Poste"
     },
     "defaultColors": {
         "primary": "3A4F74",
