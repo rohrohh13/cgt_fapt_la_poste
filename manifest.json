@@ -1,0 +1,59 @@
+{
+    "name": {
+        "en": "CGT FAPT Ressources",
+        "fr": "CGT FAPT Ressources"
+    },
+    "description": {
+        "en": "This is the theme for the CGT FAPT ressource website",
+        "fr": "Ceci est le thème pour le site des ressources de la CGT FAPT"
+    },
+    "defaultColors": {
+        "primary": "3A4F74",
+        "secondary": "82c383",
+        "third": "3A4F74"
+    },
+    "defaultFonts": {
+        "title": "Asap Condensed",
+        "text": "Open Sans"
+    },
+    "thumbnail": "thumbnail.jpg",
+    "templates": {
+        "style": "src/style.css.twig",
+        "script": "src/script.js.twig",
+        "head": "src/head.html.twig",
+        "layout": "src/layout.html.twig",
+        "header": "src/header.html.twig",
+        "footer": "src/footer.html.twig",
+        "list": "src/list.html.twig",
+        "content": "src/content.html.twig",
+        "home": "src/home.html.twig",
+        "home-calls-to-action": "src/home/calls-to-action.html.twig",
+        "home-custom-content": "src/home/custom-content.html.twig",
+        "home-newsletter": "src/home/newsletter.html.twig",
+        "home-posts": "src/home/posts.html.twig",
+        "home-events": "src/home/events.html.twig",
+        "home-socials": "src/home/socials.html.twig",
+        "manifesto-list": "src/manifesto/list.html.twig",
+        "manifesto-view": "src/manifesto/view.html.twig",
+        "trombinoscope-list": "src/trombinoscope/list.html.twig",
+        "trombinoscope-view": "src/trombinoscope/view.html.twig"
+    },
+    "assets": [
+        "assets/bg-menu.svg",
+        "assets/bg-posts.png",
+        "assets/home-default.jpg",
+        "assets/logo-cgt-fapt.png",
+        "assets/puce.png",
+        "assets/back-home.png",
+        "assets/back-footer.png",
+        "assets/recherche.png",
+        "assets/cgt-fapt-ressources.png",
+        "assets/citation.png",
+        "assets/citation-apres.png",
+        "assets/fleche-btn.png",
+        "assets/cgt-fapt-mobile.png",
+        "assets/close-menu.png",
+        "assets/back-menu-mobile.png",
+        "assets/cgt-fapt-ressources-footer.png"
+    ]
+}
