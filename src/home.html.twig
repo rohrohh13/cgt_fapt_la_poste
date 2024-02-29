@@ -50,18 +50,15 @@
             <a  href="/posts/<%= item.encoded_uuid %>/<%= item.metadata.slug %>"  class="streched-link list-items-item-link" data-turbo="optional">
                 <div class="list-items-item-box">
                     <div class="row align-items-center align-items-center-flex">
-                        <div class="">
-                            <h2 class="list-items-item-title">
-                                <svg width="54" height="54" viewBox="0 0 54 54" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <rect width="54" height="54" rx="27" fill=""/>
-                                    <path d="M28.0906 34L27.1063 33.0284L31.1588 28.9759H20.6631V27.5696H31.1588L27.1063 23.5298L28.0906 22.5455L33.8179 28.2727L28.0906 34Z" fill="#2D0F0C" fill-opacity="0.6"/>
-                                </svg><span><%= item.title %></span>
-                            </h2>
-                        </div>
                         <div class="col-md-2-img">
                             <% if (item.metadata.image) { %>
                                 <img src="https://content.citipo.com/serve/<%= item.metadata.image %>" class="list-items-item-image" width="1700" height="1080">
                             <% } %>
+                        </div>
+                        <div class="">
+                            <h2 class="list-items-item-title">
+                                <span><%= item.title %></span>
+                            </h2>
                         </div>
                     </div>
                 </div>
