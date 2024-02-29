@@ -1,0 +1,80 @@
+<div class="home">
+    <div class="home-jumbo" style="background-image: url('{{ (citipo_theme_asset_url('assets/back-home.png')) }}');">
+        {% if jumbo_overlay %}
+            <div class="home-jumbo-overlay"></div>
+        {% endif %}
+        <img class="logo-cgt-fapt" src="{{ (citipo_theme_asset_url('assets/logo-cgt-fapt.png')) }}">
+        <div class="home-jumbo-intro-container">
+            <div class="container-fluid">
+                <div class="home-jumbo-intro-view">
+                    <h1>
+                        Les ressources <br>Poste&Télécom
+                    </h1>
+                    <p>
+                        Infos réglementaires, <br>ressources, matériels militants
+                    </p>
+                        <a target="_blank" class="retour-site-amiral" href="https://cgt-fapt.fr">← Retour vers le site cgt-fapt.fr </a>
+                    {% if blocks[0] is defined and blocks[0].type == 'cta' %}
+                        <div class="home-jumbo-buttons">
+                            {{ blocks[0].content|raw }}
+                        </div>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
+     <div class="bloc-recherche-filtre bloc-recherche-filtre-autre bloc-recherche-filtre-autre-hp">
+        <a href="">
+            <img class="logo-cgt-fapt-ressources" src="{{ (citipo_theme_asset_url('assets/cgt-fapt-ressources.png')) }}">
+        </a>
+          <svg class="open-menu" width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+               <circle cx="30" cy="30" r="29.5" stroke="#2D0F0C" stroke-opacity="0.4"/>
+               <line x1="41.5" y1="38.5" x2="18.5" y2="38.5" stroke="#2D0F0C" stroke-opacity="0.6" stroke-linecap="round"/>
+               <line x1="41.5" y1="30.5" x2="18.5" y2="30.5" stroke="#2D0F0C" stroke-opacity="0.6" stroke-linecap="round"/>
+               <line x1="41.5" y1="22.5" x2="18.5" y2="22.5" stroke="#2D0F0C" stroke-opacity="0.6" stroke-linecap="round"/>
+          </svg>
+        
+        
+     </div>    
+<div data-controller="searchengine"
+     data-searchengine-endpoint-value="https://search.citipo.com"
+     data-searchengine-key-value="f5a718eda068f352cc86dc3aa9d3ab315c02eb28c6154fdccb0631d01f4eed16"
+     data-searchengine-project-value="d0d76def-fc33-4a96-92d2-280bb894c8c9"
+     data-searchengine-type-value="post"
+     data-searchengine-sort-value="date:desc"
+     data-searchengine-limit-value="200">
+     <div class="bloc-recherche-filtre">
+        <a class="no-voir" href="">
+            <img class="logo-cgt-fapt-ressources" src="{{ (citipo_theme_asset_url('assets/cgt-fapt-ressources.png')) }}">
+        </a>
+        <div class="list-categories-items"><label class="list-categories-items-div input-first"><input type="radio" data-searchengine-target="categoryFilter" name="categoryFilter" checked="checked" value="" /><span>Toutes les ressources</span></label><label class="list-categories-items-div"><input type="radio" data-searchengine-target="categoryFilter" name="categoryFilter" value="Activités TELECOM" /><span>Activités TELECOM</span></label><label class="list-categories-items-div input-last"><input type="radio" data-searchengine-target="categoryFilter" name="categoryFilter" value="Activités POSTALES" /><span>Activités POSTALES</span></label class="list-categories-items-div"></div><input type="text" data-searchengine-target="queryInput" class="form-control input-recherche" placeholder="Que recherchez-vous ?"/>
+        <p class="paragraphe-demande"><a href="/forms/6VBLOke7C1zwKGjV5CrsXo/ajouter-une-ressource">Ajouter</a> ou <a href="/forms/6F3Nbxq4QUFsb5HPZp64wo/demander-une-ressource
+">Demander</a> <br>une ressource</p>
+    </div>
+    <template data-searchengine-target="resultTemplate">
+        <div class="list-items-item">
+            <a  href="/posts/<%= item.encoded_uuid %>/<%= item.metadata.slug %>"  class="streched-link list-items-item-link" data-turbo="optional">
+                <div class="list-items-item-box">
+                    <div class="row align-items-center align-items-center-flex">
+                        <div class="">
+                            <h2 class="list-items-item-title">
+                                <svg width="54" height="54" viewBox="0 0 54 54" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect width="54" height="54" rx="27" fill=""/>
+                                    <path d="M28.0906 34L27.1063 33.0284L31.1588 28.9759H20.6631V27.5696H31.1588L27.1063 23.5298L28.0906 22.5455L33.8179 28.2727L28.0906 34Z" fill="#2D0F0C" fill-opacity="0.6"/>
+                                </svg><span><%= item.title %></span>
+                            </h2>
+                        </div>
+                        <div class="col-md-2-img">
+                            <% if (item.metadata.image) { %>
+                                <img src="https://content.citipo.com/serve/<%= item.metadata.image %>" class="list-items-item-image" width="1700" height="1080">
+                            <% } %>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </template>
+
+    <div data-searchengine-target="resultsList"></div>
+</div>
+</div>

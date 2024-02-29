@@ -1,0 +1,48 @@
+<div class="pre-footer">
+
+   <div class="container-fluid">
+           <div class="row">
+                    <div class="col-lg-12">
+                        <a href="">
+                           <img class="logo-cgt-fapt-footer" src="{{ (citipo_theme_asset_url('assets/cgt-fapt-ressources-footer.png')) }}">
+                        </a>
+                        <h2>Ceux qui gagnent <br>sont ceux qui <br>luttent</h2>                                                            
+                    </div>
+                     <div class="col-lg-4 offset-lg-8">
+                         <a class="link-pre-footer" target="_blank" href="https://adhesionfapt.lacgt.fr/">  
+                                 <div>
+                                         <svg class="fleche-lien" width="14" height="12" viewBox="0 0 14 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                         <path d="M7.85156 10.773L12.6245 6L7.85156 1.22705" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+                                         <path d="M1.375 6H12.625" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+                                         </svg>
+                                 </div>
+                                 <span>Adhérer à la CGT FAPT</span>
+                         </a>  
+                         <a target="_blank" class="link-pre-footer" href="https://cgt-fapt.fr/forms/2t94WDNlzXch9Y0tiuEym3/recois-la-vraie-info-de-ton-secteur">  
+                                 <div>
+                                         <svg class="fleche-lien" width="14" height="12" viewBox="0 0 14 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                         <path d="M7.85156 10.773L12.6245 6L7.85156 1.22705" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+                                         <path d="M1.375 6H12.625" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+                                         </svg>
+                                 </div>
+                                 <span>S’abonner aux infos</span>
+                         </a>  
+                     </div>                    
+           </div>
+   </div>
+</div>
+<footer class="footer">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12">
+                    {% for item in current_project.footer %}
+                        <a class="link-dynamique" href="{{ item.url }}" {% if item.openNewTab %}target="_blank" rel="noopener noreferrer"{% endif %}>
+                            {{ item.label }}
+                        </a>
+                    {% endfor %}
+                    <a class="lien-datack" href="https://datack.fr" target="_blank" rel="noopener noreferrer">DATACK.FR</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
