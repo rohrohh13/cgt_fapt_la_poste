@@ -47,10 +47,6 @@
         <a class="no-voir" href="">
             <img class="logo-cgt-fapt-ressources" src="{{ (citipo_theme_asset_url('assets/cgt-fapt-ressources.png')) }}">
         </a>
-        <div class="list-categories-items"><label class="list-categories-items-div input-first"><input type="radio" data-searchengine-target="categoryFilter" name="categoryFilter" checked="checked" value="" /><span>Toutes les ressources</span></label><label class="list-categories-items-div"><input type="radio" data-searchengine-target="categoryFilter" name="categoryFilter" value="Activités TELECOM" /><span>Activités TELECOM</span></label><label class="list-categories-items-div input-last"><input type="radio" data-searchengine-target="categoryFilter" name="categoryFilter" value="Activités POSTALES" /><span>Activités POSTALES</span></label class="list-categories-items-div"></div><input type="text" data-searchengine-target="queryInput" class="form-control input-recherche" placeholder="Que recherchez-vous ?"/>
-        <p class="paragraphe-demande"><a href="/forms/6VBLOke7C1zwKGjV5CrsXo/ajouter-une-ressource">Ajouter</a> ou <a href="/forms/6F3Nbxq4QUFsb5HPZp64wo/demander-une-ressource
-">Demander</a> <br>une ressource</p>
-    </div>
     <template data-searchengine-target="resultTemplate">
         <div class="list-items-item">
             <a  href="/posts/<%= item.encoded_uuid %>/<%= item.metadata.slug %>"  class="streched-link list-items-item-link" data-turbo="optional">
