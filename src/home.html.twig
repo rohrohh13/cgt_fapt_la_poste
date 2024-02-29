@@ -1,27 +1,9 @@
 <div class="home">
-    <div class="home-jumbo" style="background-image: url('{{ (citipo_theme_asset_url('assets/back-home.png')) }}');">
-        {% if jumbo_overlay %}
-            <div class="home-jumbo-overlay"></div>
-        {% endif %}
-        <img class="logo-cgt-fapt" src="{{ (citipo_theme_asset_url('assets/logo-cgt-fapt.png')) }}">
-        <div class="home-jumbo-intro-container">
-            <div class="container-fluid">
-                <div class="home-jumbo-intro-view">
-                    <h1>
-                        Les ressources <br>Poste&Télécom
-                    </h1>
-                    <p>
-                        Infos réglementaires, <br>ressources, matériels militants
-                    </p>
-                        <a target="_blank" class="retour-site-amiral" href="https://cgt-fapt.fr">← Retour vers le site cgt-fapt.fr </a>
-                    {% if blocks[0] is defined and blocks[0].type == 'cta' %}
-                        <div class="home-jumbo-buttons">
-                            {{ blocks[0].content|raw }}
-                        </div>
-                    {% endif %}
-                </div>
-            </div>
-        </div>
+    <div class="home-jumbo">
+
+    </div>
+    <div>
+        <p>Lutter, rassembler, négocier<p/>
     </div>
      <div class="bloc-recherche-filtre bloc-recherche-filtre-autre bloc-recherche-filtre-autre-hp">
         <a href="">
