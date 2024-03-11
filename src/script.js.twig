@@ -90,9 +90,9 @@ const shareButton = document.querySelector('.new-share');
                 seconde.textContent = caractere(nb_secondes);
  
                 jour_label.textContent = genre(nb_jours, 'jour');
-                heure_label.textContent = genre(nb_heures, 'heure');
-                minute_label.textContent = genre(nb_minutes, 'minute');
-                seconde_label.textContent = genre(nb_secondes, 'seconde');        
+                heure_label.textContent = genre(nb_heures, 'h');
+                minute_label.textContent = genre(nb_minutes, 'min');
+                seconde_label.textContent = genre(nb_secondes, 's');        
             }
  
             let minuteur = setTimeout("reboursF();", 1000);
