@@ -61,32 +61,6 @@ function myFunction() {
 
 const shareButton = document.querySelector('.new-share');
 
-
-shareButton.addEventListener('click', event => {
-  if (navigator.share) { 
-   navigator.share({
-      title: 'CGT FAPT',
-      url: window.location.href
-    }).then(() => {
-      console.log('Thanks for sharing!');
-    })
-    .catch(console.error);
-    } else {
-
-    }
-});
-
-
-function readingTime() {
-  const text = document.getElementById("contenu-article").innerText;
-  const wpm = 225;
-  const words = text.trim().split(/\s+/).length;
-  const time = Math.ceil(words / wpm);
-  document.getElementById("time").innerText = time;
-}
-readingTime();
-
-
        function reboursF()
         {
             let rebours = document.getElementById("rebours"),
@@ -135,3 +109,30 @@ readingTime();
         }
  
         reboursF();
+
+
+shareButton.addEventListener('click', event => {
+  if (navigator.share) { 
+   navigator.share({
+      title: 'CGT FAPT',
+      url: window.location.href
+    }).then(() => {
+      console.log('Thanks for sharing!');
+    })
+    .catch(console.error);
+    } else {
+
+    }
+});
+
+
+function readingTime() {
+  const text = document.getElementById("contenu-article").innerText;
+  const wpm = 225;
+  const words = text.trim().split(/\s+/).length;
+  const time = Math.ceil(words / wpm);
+  document.getElementById("time").innerText = time;
+}
+readingTime();
+
+
