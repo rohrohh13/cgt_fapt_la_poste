@@ -97,7 +97,15 @@ const shareButton = document.querySelector('.new-share');
  
             let minuteur = setTimeout("reboursF();", 1000);
         }
+         function genre(nb, libelle)
+        {
+            return (nb > 1) ? libelle+'' : libelle;
+        }
  
+        function caractere(nb)
+        {
+            return (nb < 10) ? '0'+nb : nb;
+        }
         reboursF();
 
 
