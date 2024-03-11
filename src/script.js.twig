@@ -89,23 +89,13 @@ const shareButton = document.querySelector('.new-share');
                 minute.textContent = caractere(nb_minutes);
                 seconde.textContent = caractere(nb_secondes);
  
-                jour_label.textContent = genre(nb_jours, 'jour');
+                jour_label.textContent = genre(nb_jours, 'jours');
                 heure_label.textContent = genre(nb_heures, 'h');
                 minute_label.textContent = genre(nb_minutes, 'min');
                 seconde_label.textContent = genre(nb_secondes, 's');        
             }
  
             let minuteur = setTimeout("reboursF();", 1000);
-        }
- 
-        function genre(nb, libelle)
-        {
-            return (nb > 1) ? libelle+'s' : libelle;
-        }
- 
-        function caractere(nb)
-        {
-            return (nb < 10) ? '0'+nb : nb;
         }
  
         reboursF();
