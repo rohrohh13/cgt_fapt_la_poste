@@ -1,4 +1,7 @@
-     <div class="bloc-recherche-filtre bloc-recherche-filtre-autre">
+{% if title =='Ressources' %}
+     {{ content|raw }}
+{% else %}
+<div class="bloc-recherche-filtre bloc-recherche-filtre-autre">
         <a href="">
             <img class="logo-cgt-fapt-ressources" src="{{ (citipo_theme_asset_url('assets/cgt-fapt-ressources-la-poste.png')) }}">
         </a>
@@ -11,9 +14,7 @@
         
         
      </div>
-{% if title =='Ressources' %}
-     {{ content|raw }}
-{% else %}
+
 <div class="container-fluid">
 
 
