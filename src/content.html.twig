@@ -22,7 +22,7 @@
         <div class="container-fluid container-des-ressources">
              {{ content|raw }}
         </div>
-         {% if title =='Ressources' %}
+         {% else %}
                 {{ content|raw }}
          {% endif %}
 {% else %}
