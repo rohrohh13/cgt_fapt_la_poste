@@ -58,6 +58,8 @@ function myFunction() {
   navigator.clipboard.writeText(copyText.value);
 
 } 
+
+const shareButton = document.querySelector('.new-share');
 shareButton.addEventListener('click', event => {
   if (navigator.share) { 
    navigator.share({
@@ -71,7 +73,7 @@ shareButton.addEventListener('click', event => {
 
     }
 });
-const shareButton = document.querySelector('.new-share');
+
 
 
 
