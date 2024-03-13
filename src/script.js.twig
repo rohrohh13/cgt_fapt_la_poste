@@ -58,7 +58,19 @@ function myFunction() {
   navigator.clipboard.writeText(copyText.value);
 
 } 
+shareButton.addEventListener('click', event => {
+  if (navigator.share) { 
+   navigator.share({
+      title: 'CGT FAPT',
+      url: window.location.href
+    }).then(() => {
+      console.log('Thanks for sharing!');
+    })
+    .catch(console.error);
+    } else {
 
+    }
+});
 const shareButton = document.querySelector('.new-share');
 
        function reboursF()
@@ -109,19 +121,7 @@ const shareButton = document.querySelector('.new-share');
         reboursF();
 
 
-shareButton.addEventListener('click', event => {
-  if (navigator.share) { 
-   navigator.share({
-      title: 'CGT FAPT',
-      url: window.location.href
-    }).then(() => {
-      console.log('Thanks for sharing!');
-    })
-    .catch(console.error);
-    } else {
 
-    }
-});
 
 
 function readingTime() {
