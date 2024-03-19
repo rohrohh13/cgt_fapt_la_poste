@@ -9,7 +9,15 @@ function printDiv(divName) {
      document.body.innerHTML = originalContents;
 }
 
+$(window).scroll(function() {    
+    var scroll = $(window).scrollTop();
 
+     //>=, not <=
+    if (scroll >= 500) {
+        //clearHeader, not clearheader - caps H
+        $(".detail-main").addClass("detail-main-scroll");
+    }
+}); //missing );
 
 $(document).ready(function () {
     jQuery('blockquote').closest('.col-md-12').addClass('back-special-blockquote');
