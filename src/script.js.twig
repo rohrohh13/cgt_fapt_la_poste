@@ -16,8 +16,12 @@ $(window).scroll(function() {
     if (scroll >= 300) {
         //clearHeader, not clearheader - caps H
         $(".detail-main").addClass("detail-main-scroll");
+          $(".detail-main-un").addClass("detail-main-scroll");
+          $(".detail-main-deux").addClass("detail-main-scroll");
     } else {
         $(".detail-main").removeClass("detail-main-scroll");
+          $(".detail-main-un").removeClass("detail-main-scroll");
+          $(".detail-main-deux").removeClass("detail-main-scroll");
     }
 }); //missing );
 
