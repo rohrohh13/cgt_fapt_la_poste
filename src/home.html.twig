@@ -151,8 +151,9 @@
         </div>
     </div>
     <template data-searchengine-target="resultTemplate">
-        <div class="list-items-item">
+       
             <a  href="/posts/<%= item.encoded_uuid %>/<%= item.metadata.slug %>"  class="streched-link list-items-item-link" data-turbo="optional">
+                <div class="list-items-item">
                 <div class="list-items-item-box">
                     <div class="row align-items-center align-items-center-flex">
                         <div class="col-md-2-img">
@@ -169,8 +170,9 @@
                         </div>
                     </div>
                 </div>
+                </div>
             </a>
-        </div>
+        
     </template>
 
     <div data-searchengine-target="resultsList"></div>
